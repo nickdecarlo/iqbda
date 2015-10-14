@@ -1,23 +1,19 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
+    <meta charset="utf-8">
     <title>IQBDA</title>
     <link rel="stylesheet" type="text/css" href="base.css" media="screen" />
   </head>
   <body>
     <div id="page-wrapper">
+      <header id="page-header">
+        <img width="102" height="60" src="Skittles.gif" alt="logo">
+        <h1>IQBDA</h1>
+        <h2>The International QBASIC Developers Association</h2>
+      </header>
 
-      <div id="header">
-        <img width="102" height="60" src="Skittles.gif"><b>
-        <i>
-          <h1>IQBDA</h1>
-        </i></b>
-        <i><h2>The International QBASIC Developers
-          Association</h2></i>
-      </div>
-
-      <div id="navbar">
+      <nav id="navbar">
         <ul>
           <li>
             <a href="index.html">Home</a>
@@ -26,67 +22,45 @@
             <a href="iqbdc.html">IQBDC</a>
           </li>
           <li>
-            <a href="index.html">Become a Member</a>
+            <a href="member.html">Become a Member</a>
           </li>
-
         </ul>
-      </div>
-      <hr>
+      </nav>
       <div id="content">
-        <form>
-    <h2>Join IQBDA Today</h2>
-<form method="post" action="MAILTO:Nicholas.DeCarlo@student.Fairfield.edu">
-  <fieldset>
-    <li>
-         <label for="form-name">Name:</label>
-         <input type="text" name="name" id="form-names">
-</li>
-<li>
-         <label for="form-pass">Password:</label>
-         <input type="password" name="pass" id="form-pass">
-       </li>
-       <li>
-         <label for="form-pass2">Password(agian):</label>
-         <input type="password" name="pass" id="form-pass">
-       </li>
-       <li>
-         <label for="form-email">Email:</label>
-         <input type="email" name="email" id="form-email">
-       </li>
-       <li>
-         <label for="form-photo">Photo:</label>
-         <input type="file" name="photo" id="form-photo">
-       </li>
-       <li>
-         <label for="address">Mailing Adress:</label><br>
-         <textarea name="address" row="5" col="50" Placeholder="please enter your mailing address" id="form-address">
-         </textarea>
-       </li>
-       <p>
-        Do you plan to attend IQBDC '98?<input type="radio" name="iqbdc" input="Y"> Yes <input type="radio" name="iqbdc" input="N"> No
-      </label>
-      <br>
-      <p> How did you here about us?</P><select name="channel" size="4">
-        <option>SuperBowl Ad</option>
-        <option>News Article Ad</option>
-        <option>Email</option>
-        <option>Fly Over at Beach</option>
-      </select>
-      <p><input type="Submit"></p>
+        <header id="page-title"><h1>Join IQBDA Today!</h1></header>
+        <form action="http://is-dsb.fairfield.edu/is135/iqbda-signup.php" method="post">
+          <label for="name-field">Name</label>
+          <input id="name-field" type="text" name="name">
 
-       </p>
-       </p>
-      </d>
-      <div>
+          <label for="pass-field">Password</label>
+          <input id="pass-field" type="password" name="pass">
 
-      </div>
+          <label for="pass2-field">Password (again)</label>
+          <input id="pass2-field" type="password" name="pass2">
 
-         </div>
+          <label for="email-field">Email</label>
+          <input id="email-field"type="email" name="email">
 
-      </div>
+          <label for="photo-field">Photo</label>
+          <input id="photo-field" type="file" name="photo">
 
+          <label for="address-field">Mailing Address</label>
+          <textarea id="address-field" name="address"></textarea>
+
+          <label>Do you plan to attend IQBDC ‘98?</label>
+          <input type="radio" name="iqbdc98" value="Y" id="iqbdc98-Y"><label for="iqbdc98-Y">Yes</label>
+          <input type="radio" name="iqbdc98" value="N" id="iqbdc98-N"><label for="iqbdc98-N">No</label>
+
+          <label for="channel-field">How did you hear about us?</label>
+          <select id="channel-field" name="channel">
+            <option value="superbowl">Superbowl Ad</option>
+            <option value="news">News Article</option>
+            <option value="email">Email</option>
+            <option value="flyover">Flyover at the Beach</option>
+          </select>
+          <input type="submit">
+        </form>
       </div>
     </div>
   </body>
-</html>
 </html>
